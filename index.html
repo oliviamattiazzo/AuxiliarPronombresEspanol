@@ -13,47 +13,52 @@
 <body>
     <header>Automatizador de pronombres <i class="em em-es" aria-role="presentation" aria-label="Spain Flag"></i>
     </header>
-    <section class="conjugacion-verbos">
-        <form onsubmit="conjugacionController.add(event)">
-            <div class="verbo-infinitivo">
-                <label for="verbo">Verbo:</label>
-                <input type="text" id="verbo" name="verbo">
-            </div>
-            <div class="conjugacion">
-                <table>
-                    <tr>
-                        <td><label for="con-yo">Yo</label></td>
-                        <td><input type="text" id="con-yo" name="con-yo"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="con-tu">Tú</label></td>
-                        <td><input type="text" id="con-tu" name="con-tu"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="con-el">Él | Ella | Usted</label></td>
-                        <td><input type="text" id="con-el" name="con-el"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="con-nosotros">Nosotros | Nosotras</label></td>
-                        <td><input type="text" id="con-nosotros" name="con-nosotros"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="con-vosotros">Vosotros | Vosotras</label></td>
-                        <td><input type="text" id="con-vosotros" name="con-vosotros"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="con-ellos">Ellos | Ellas | Ustedes</label></td>
-                        <td><input type="text" id="con-ellos" name="con-ellos"></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="btn-agregar">
-                <button type="button">
-                    Agregar conjugación
-                </button>
-            </div>
-        </form>
-    </section>
+    <div class="wrapper">
+        <section class="conjugacion-verbos">
+            <form onsubmit="conjugacionController.add(event)">
+                <div class="verbo-infinitivo">
+                    <label for="verbo">Verbo:</label>
+                    <input type="text" id="verbo" name="verbo">
+                </div>
+                <div class="conjugacion">
+                    <table>
+                        <tr>
+                            <td><label for="con-yo">Yo</label></td>
+                            <td><input type="text" id="con-yo" name="con-yo"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="con-tu">Tú</label></td>
+                            <td><input type="text" id="con-tu" name="con-tu"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="con-el">Él | Ella | Usted</label></td>
+                            <td><input type="text" id="con-el" name="con-el"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="con-nosotros">Nosotros | Nosotras</label></td>
+                            <td><input type="text" id="con-nosotros" name="con-nosotros"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="con-vosotros">Vosotros | Vosotras</label></td>
+                            <td><input type="text" id="con-vosotros" name="con-vosotros"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="con-ellos">Ellos | Ellas | Ustedes</label></td>
+                            <td><input type="text" id="con-ellos" name="con-ellos"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="btn-agregar">
+                    <button type="submit" class="rainbow rainbow-1">
+                        Agregar conjugación
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class="resultados">
+            <h2>Resultados</h2>
+        </section>
+    </div>
 
     <script src="js/models/Conjugacion.js"></script>
     <script src="js/controllers/ConjugacionController.js"></script>

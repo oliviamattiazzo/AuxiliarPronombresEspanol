@@ -12,6 +12,7 @@ class ConjugacionController {
     }
 
     add(conjugacion) {
-        
+        event.preventDefault();
+        console.log('teste');
     }
 }
