@@ -6,7 +6,7 @@
 
 header {
     font-family: 'MuseoModerno', cursive;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     margin-top: 0.3em;
     text-align: center;
@@ -26,7 +26,8 @@ input {
     width: 200px;
 }
 
-input:hover {
+input:hover,
+input:focus {
     box-shadow: 0px 0px 10px gainsboro;
     border: 1px solid darkgray;
 }
@@ -44,6 +45,7 @@ button {
 
 div .wrapper {
     position: relative;
+    margin-top: 2em;
     margin: auto;
 }
 
@@ -54,19 +56,17 @@ section {
 }
 
 h2 {
-    font-family: 'MuseoModerno', cursive;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
-    margin-top: 1.5em;
 }
 
 .conjugacion-verbos {
-    margin-left: 2em;
+    margin-left: 10em;
 }
 
 .verbo-infinitivo {
-    margin-top: 2.5em;
+    margin-top: 1em;
     margin-left: 4em;
 }
 
@@ -84,7 +84,58 @@ h2 {
 }
 
 .resultados {
-    
+    margin-left: 10em;
+}
+
+.msg-sucesso,
+.msg-alerta {
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-left: 10em;
+    margin-right: 20em;
+    padding: 15px;
+}
+
+.msg-sucesso {
+    background-color: #B1F5B6;
+    border: 1px solid #569C56;
+    color: #004F3A;
+}
+
+.msg-alerta {
+    background-color: #FAE9A7;
+    border: 1px solid #F0B30C;
+    color: #664C05;
+}
+
+.fas {
+    font-size: 20px;
+}
+
+.em-white_check_mark {
+    font-size: 16px;
+}
+
+.em-arrow_right {
+    font-size: 12px;
+}
+
+.verbo-conjugado {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.verbo-conjugado h3 {
+    margin-left: 3em;
+    margin-bottom: 0.5em;
+}
+
+.verbo-conjugado p {
+    margin-left: 6em;
+}
+
+.resultados button {
+    margin-left: 4em;
 }
 
 /* Credits to: https://codepen.io/althi/pen/eKdmaa*/
@@ -93,6 +144,7 @@ h2 {
     border-radius: 4px;  
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
     padding: 8px 16px;
 }
 

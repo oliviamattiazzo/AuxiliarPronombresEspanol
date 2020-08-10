@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automatizador de pronombres</title>
-    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/293847d6a2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>Automatizador de pronombres <i class="em em-es" aria-role="presentation" aria-label="Spain Flag"></i>
     </header>
     <div class="wrapper">
+        <div id="mensagemView"></div>
         <section class="conjugacion-verbos">
             <form onsubmit="conjugacionController.add(event)">
                 <div class="verbo-infinitivo">
@@ -56,12 +58,18 @@
             </form>
         </section>
         <section class="resultados">
-            <h2>Resultados</h2>
+            <div id="conjugacionView"></div>
         </section>
     </div>
 
+    <script src="js/models/Mensagem.js"></script>
     <script src="js/models/Conjugacion.js"></script>
+    <script src="js/models/ListaConjugaciones.js"></script>
     <script src="js/controllers/ConjugacionController.js"></script>
+    <script src="js/views/View.js"></script>
+    <script src="js/views/MensagemView.js"></script>
+    <script src="js/views/ConjugacionView.js"></script>
+    <script src="js/views/ExportacaoView.js"></script>
     <script>
         let conjugacionController = new ConjugacionController();
     </script>
