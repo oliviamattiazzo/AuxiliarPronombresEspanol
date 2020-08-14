@@ -34,8 +34,8 @@ class ConjugacionView extends View {
                      </div>
                     `
                 ).join('')}
-            <button type="button" class="rainbow rainbow-1" onclick="conjugacionController.export()">
-                Exportar
+            <button type="button" class="rainbow rainbow-1 btn-print" id="btn-print" onclick="exportacaoController.print()">
+                <i class="fas fa-print"></i>
             </button>`;
     }
 }

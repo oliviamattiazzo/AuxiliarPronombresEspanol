@@ -138,6 +138,10 @@ h2 {
     margin-left: 4em;
 }
 
+.btn-print {
+    margin-left: 20px;
+}
+
 /* Credits to: https://codepen.io/althi/pen/eKdmaa*/
 .rainbow{
     background-color: #343A40;

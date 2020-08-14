@@ -63,7 +63,7 @@ class ConjugacionController {
         if (this._inputConVos.value.trim() == '')
             return this._inputConVos;
         if (this._inputConEllos.value.trim() == '')
-            return this._inputConEllos; 
+            return this._inputConEllos;
     }
 
     _criaConjugacion() {
