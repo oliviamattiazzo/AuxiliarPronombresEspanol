@@ -60,17 +60,23 @@
         <section class="resultados">
             <div id="conjugacionView"></div>
         </section>
+        <div id="footerView"></div>
     </div>
 
     <script src="js/models/Mensagem.js"></script>
     <script src="js/models/Conjugacion.js"></script>
     <script src="js/models/ListaConjugaciones.js"></script>
     <script src="js/controllers/ConjugacionController.js"></script>
+    <script src="js/controllers/ExportacaoController.js"></script>
     <script src="js/views/View.js"></script>
     <script src="js/views/MensagemView.js"></script>
     <script src="js/views/ConjugacionView.js"></script>
     <script src="js/views/ExportacaoView.js"></script>
+    <script src="js/views/FooterView.js"></script>
     <script>
+        let footerView = new FooterView(document.getElementById('footerView'));
+        footerView.update();
+
         let conjugacionController = new ConjugacionController();
         let exportacaoController = new ExportacaoController();
     </script>
