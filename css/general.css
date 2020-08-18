@@ -37,7 +37,7 @@ label {
 }
 
 button {
-    border: 1px solid #FFF9B5;
+    border: 0px;
     border-radius: 10px;
     font-size: 14px;
     outline: 0;
@@ -145,11 +145,25 @@ footer {
 
 .resultados button {
     margin-left: 4em;
+    margin-top: 1.5em;
 }
 
 .btn-print {
     margin-left: 20px;
 }
+
+/*.btn-delete {
+    background-color: #d93025;
+    border: 1px solid #d93025;
+    padding: 10px;
+    color: white;
+    font-size: 9px;
+}
+
+.btn-delete:hover {
+    box-shadow: 0px 0px 10px gainsboro;
+    border: 1px solid #cf1a29;
+}*/
 
 /* Credits to: https://codepen.io/althi/pen/eKdmaa*/
 .rainbow{

@@ -11,7 +11,8 @@ class ConjugacionView extends View {
                         <p>Nosotros | Nosotras ${c.nos}</p>
                         <p>Vosotros | Vosotras ${c.vos}</p>
                         <p>Ellos | Ellas | Ustedes ${c.ellos}</p>
-                     </div>
+                        <!--<button type="button" class="btn-delete"><i class="fas fa-trash-alt"></i></button>-->
+                    <div>
                     `
                 ).join('')}
             <button type="button" class="rainbow rainbow-1" onclick="conjugacionController.export()">
