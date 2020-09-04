@@ -4,14 +4,13 @@ class ConjugacionView extends View {
             <h2>Resultados <i class="em em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i></h2>
                 ${model.listaConjugaciones.map(c =>
                     `<div class="verbo-conjugado">
-                        <h3><i class="em em-arrow_right" aria-role="presentation" aria-label="BLACK RIGHTWARDS ARROW"></i> Infinitivo: ${c.infinitivo}</h3>
+                        <h3><button class="btn-delete"><i class="fas fa-minus-circle"></i></button> Infinitivo: ${c.infinitivo}</h3>
                         <p>Yo ${c.yo}</p>
                         <p>Tú ${c.tu}</p>
                         <p>Él | Ella | Usted ${c.el}</p>
                         <p>Nosotros | Nosotras ${c.nos}</p>
                         <p>Vosotros | Vosotras ${c.vos}</p>
                         <p>Ellos | Ellas | Ustedes ${c.ellos}</p>
-                        <!--<button type="button" class="btn-delete"><i class="fas fa-trash-alt"></i></button>-->
                     <div>
                     `
                 ).join('')}
