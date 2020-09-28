@@ -25,7 +25,7 @@ class ConjugacionController {
         let campoErro = this._camposPreenchidosCorretamente();
         if (campoErro)
         {
-            this._mensagem.texto = 'É necessário preencher todos os campos!';
+            this._mensagem.texto = 'Es necesario llenar todos los campos!';
             this._mensagem.sucesso = false;
             this._mensagemView.update(this._mensagem);
 
@@ -36,7 +36,7 @@ class ConjugacionController {
         this._listaConjugaciones.add(this._criaConjugacion());
         this._conjugacionesView.update(this._listaConjugaciones);
 
-        this._mensagem.texto = 'Negociação adicionada com sucesso!';
+        this._mensagem.texto = 'Conjugación adicionada con éxito!';
         this._mensagem.sucesso = true;
         this._mensagemView.update(this._mensagem);
 
@@ -47,6 +47,17 @@ class ConjugacionController {
         let printWindow = window.open('', '', 'height=400, width=800');
         printWindow.document.write(this._exportacaoView.template());
         printWindow.document.close();
+    }
+
+    delete(infinitivo) {
+        console.log(infinitivo);
+
+        this._listaConjugaciones.delete(infinitivo);
+        this._conjugacionesView.update(this._listaConjugaciones);
+
+        this._mensagem.texto = 'Conjugación apagada con éxito!'
+        this._mensagem.sucesso = true;
+        this._mensagemView.update(this._mensagem);
     }
 
     _camposPreenchidosCorretamente() {
