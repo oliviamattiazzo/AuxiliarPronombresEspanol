@@ -19,19 +19,10 @@ class ConjugacionController {
         this._exportacaoView = new ExportacaoView(this._conjugacionesView, this._listaConjugaciones);
     }
 
-    add(conjugacion) {
+    add() {
         event.preventDefault();
 
-        let campoErro = this._camposPreenchidosCorretamente();
-        if (campoErro)
-        {
-            this._mensagem.texto = 'Es necesario llenar todos los campos!';
-            this._mensagem.sucesso = false;
-            this._mensagemView.update(this._mensagem);
-
-            campoErro.focus();
-            return;
-        }
+        if (!this._validaConjugacion(this._criaConjugacion())) { return; }
         
         this._listaConjugaciones.add(this._criaConjugacion());
         this._conjugacionesView.update(this._listaConjugaciones);
@@ -99,5 +90,31 @@ class ConjugacionController {
         this._inputConEllos.value = '';
 
         this._inputVerbo.focus();
+    }
+
+    _validaConjugacion(conjugacion) {
+        let campoErro = this._camposPreenchidosCorretamente();
+        if (campoErro) {
+            this._mensagem.texto = 'Es necesario llenar todos los campos!';
+            this._mensagem.sucesso = false;
+            this._mensagemView.update(this._mensagem);
+
+            campoErro.focus();
+            return false;
+        }
+
+        if (this._listaConjugaciones.listaConjugaciones.length > 0) {
+            let existeVerboInfinitivoIgual = this._listaConjugaciones.listaConjugaciones.find(elemento => elemento.infinitivo == conjugacion.infinitivo) != undefined;
+            if (existeVerboInfinitivoIgual) {
+                this._mensagem.texto = 'Este verbo ya fue conjugado!';
+                this._mensagem.sucesso = false;
+                this._mensagemView.update(this._mensagem);
+
+                this._inputVerbo.focus();
+                return false;
+            }
+        }
+
+        return true;
     }
 }
