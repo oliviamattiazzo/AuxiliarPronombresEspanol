@@ -106,13 +106,26 @@ footer {
     margin-left: 3em;
 }
 
-.msg-sucesso,
-.msg-alerta {
-    border-radius: 10px;
-    margin-top: 2em;
-    margin-left: 10em;
-    margin-right: 20em;
-    padding: 15px;
+@media(min-width: 1200px) {
+    .msg-sucesso,
+    .msg-alerta {
+        border-radius: 10px;
+        margin-top: 2em;
+        margin-left: 10em;
+        margin-right: 20em;
+        padding: 15px;
+    }
+}
+
+@media(min-width: 1800px) {
+    .msg-sucesso,
+    .msg-alerta {
+        border-radius: 10px;
+        margin-top: 2em;
+        margin-left: 10em;
+        margin-right: 28em;
+        padding: 15px;
+    }
 }
 
 .msg-sucesso {
