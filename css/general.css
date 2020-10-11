@@ -14,6 +14,7 @@ header {
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 input {
@@ -43,10 +44,19 @@ button {
     outline: 0;
 }
 
-div .wrapper {
-    position: relative;
-    margin-top: 2em;
-    margin: auto;
+@media(min-width: 1200px) {
+    .wrapper {
+        position: relative;
+        margin-top: 2em;
+    }
+}
+
+@media(min-width: 1800px) {
+    .wrapper {
+        position: relative;
+        margin-top: 2em; 
+        margin-left: 20em;
+    }
 }
 
 section {
@@ -143,6 +153,12 @@ footer {
 
 .verbo-conjugado p {
     margin-left: 6em;
+}
+
+.resultados-conjugaciones {
+    height: 18em;
+    width: 30em;
+    overflow-x: auto;
 }
 
 .verbo-conjugado-export p {
