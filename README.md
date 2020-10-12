@@ -22,6 +22,7 @@ Feel free to report any bug or suggestion!
 #### Improvements
 - [ ] Put 5 conjugations per page, so they doens't break
 - [ ] Insert a new field so you can write the verbal tense you're studying
+- [ ] Apply some refactoring into the code from the [second part of the course](https://cursos.alura.com.br/course/javascript-es6-orientacao-a-objetos-parte-2) I mentioned above
 
 #### New features
 - [ ] Internacionalization: add the pronoums to other idioms
