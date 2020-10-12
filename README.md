@@ -1,7 +1,7 @@
 # Automatizador de Pronombres
 A tool to help you with verbs conjugations (in spanish)
 
-<img src="https://img.shields.io/github/tag/oliviamattiazzo/AuxiliarPronombresEspanol.svg?style=plastic&label=version"><img src="https://img.shields.io/github/languages/top/oliviamattiazzo/AuxiliarPronombresEspanol.svg?style=plastic"><img src="https://img.shields.io/github/last-commit/oliviamattiazzo/AuxiliarPronombresEspanol.svg?style=plastic">
+<img src="https://img.shields.io/github/tag/oliviamattiazzo/AuxiliarPronombresEspanol.svg?style=plastic&label=version"> <img src="https://img.shields.io/github/languages/top/oliviamattiazzo/AuxiliarPronombresEspanol.svg?style=plastic"> <img src="https://img.shields.io/github/last-commit/oliviamattiazzo/AuxiliarPronombresEspanol.svg?style=plastic">
 
 
 ### What was it? :thought_balloon:
